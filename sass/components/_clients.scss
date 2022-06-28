@@ -1,0 +1,50 @@
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.clients__title{
+  margin-bottom: 50px;
+ font-family: "Roboto";
+  font-style: normal;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em; 
+}
+
+.clients__list{
+  display: flex;
+}
+
+.clients__item {
+  margin-right: 30px;
+  &:last-child{
+  margin-right: 0;
+  }
+}
+
+.clients__link{
+  width: 170px;
+height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $icon-color ;
+  border-radius: 4px;
+  color: $icon-color;
+   transition-property: color, border-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover,
+  &:focus{
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon{
+  fill:currentColor;
+}
