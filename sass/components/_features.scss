@@ -7,25 +7,38 @@
 @media screen and (min-width: $tablet) {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+}
+
+ @media screen and (min-width: $desktop){
+   margin: -15px;
 }
 
 }
-
 .features__item{
-  margin-right: 30px;
-  &:last-child{
-    margin-right: 0;
-  }
+text-align: center;
+ 
   @media screen and (min-width: $tablet){
-    flex-basis: calc(100% / 2 - 30px);
+    text-align: left;
+   width: calc((100% - 4 * 15px) / 2);
+   margin: 15px;
+
   }
+
 
   @media screen and (min-width: $desktop){
-    flex-basis: calc(100% / 4 - 30px);
+    text-align: left;
+   width: calc((100% - 8 * 15px) / 4);
+    
+&:not(:last-child) {
+  @media screen and(max-width: 767px){
+    margin-bottom: 30px;
+  }
+}
   }
 
-
 }
+
 
 .features__title {
   margin-bottom: 10px;
@@ -40,8 +53,9 @@
 }
 
 .features__icon{
+  background-color: $secondary-white-color;
   height: 120px;
-  width: 270px;
+  width: 100%;
   margin-bottom: 30px;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
