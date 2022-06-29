@@ -59,6 +59,13 @@
 justify-content: center;
 }
 
+.crew__link__item{
+  margin-right: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
 .crew__link{
   display: flex;
   color: $icon-color;
