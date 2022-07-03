@@ -13,6 +13,9 @@
     fill: $accent-color;
   }
   
+  @media screen and (min-width: 768px){
+    display: none;
+  }
 }
 
 .page-header-menu__button .page-header__icon-close{
@@ -28,14 +31,22 @@
 }
 
 .page-header-menu__container{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 480px;
-  height: 796px;
+ 
 background-color: $primary-white-color;
 &.is-open{
   display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+  display: none;
+   position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  display: flex;
 }
 }

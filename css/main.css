@@ -79,6 +79,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-header__logo {
@@ -93,7 +96,6 @@ body {
           align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-right: 95px;
   color: #000000;
   text-decoration: none;
   font-family: Raleway;
@@ -116,10 +118,11 @@ body {
   color: #2196f3;
 }
 
-.page-header-site-nav {
+.page-header-site-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 305px;
 }
 
 .page-header-site-nav__item {
@@ -129,7 +132,7 @@ body {
   margin-right: 0;
 }
 
-.page-header-site-nav .page-header-site-nav__link {
+.page-header-site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -146,7 +149,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.page-header-site-nav .page-header-site-nav__link:hover, .page-header-site-nav .page-header-site-nav__link:focus {
+.page-header-site-nav__link:hover, .page-header-site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -178,7 +181,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -243,6 +245,11 @@ body {
 .page-header-menu__button:hover, .page-header-menu__button:focus {
   fill: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .page-header-menu__button {
+    display: none;
+  }
+}
 
 .page-header-menu__button .page-header__icon-close {
   display: none;
@@ -257,16 +264,26 @@ body {
 }
 
 .page-header-menu__container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 480px;
-  height: 796px;
   background-color: #ffffff;
 }
 .page-header-menu__container.is-open {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .page-header-menu__container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-header-menu__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .hero {
