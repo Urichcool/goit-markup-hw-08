@@ -1,11 +1,18 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
+  &--none-border{
+    border-bottom: 0;
+  }
 }
 
 .page-header-main-nav {
+ 
   display: flex;
   align-items: center;
 }
+
+
 
 .page-header__logo {
   display: flex;

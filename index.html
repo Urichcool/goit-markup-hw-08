@@ -14,13 +14,13 @@
     
 </head>
 <body>
-    <header>
+    <header class="page-header page-header--none-border">
         <div class="container page-header-main-nav">
     <nav class="page-header-main-nav">
         <a class="page-header__logo" href="./index.html">
       <span class="page-header__logo--color">Web</span>Studio
         </a>
-        
+       
     <ul class="list page-header-site-nav">
         <li class="page-header-site-nav__item"><a href="./index.html" class="page-header-site-nav__link--current">Студия</a></li>
         <li class="page-header-site-nav__item"><a href="./portfolio.html" class="page-header-site-nav__link">Портфолио</a></li>
@@ -42,6 +42,25 @@
             </svg>
             +38 099 111 11 11</a></li>
     </ul>
+        </div>
+
+         <button type="button" 
+        class="page-header-menu__button is-open"
+        aria-expanded="false"
+        aria-controls="page-header-menu__container"
+        data-menu-button>
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню">
+                <use class="page-header__icon-menu" href="./images/icons.svg#icon-menu-close"></use>
+                <use class="page-header__icon-close" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+
+        <div class="page-header-menu__container" id="page-header-menu__container" data-menu>
+            <div class="page-header-menu__nav"></div>
+            <div class="page-header-menu__contacts"></div>
         </div>
     </header>
 
@@ -431,6 +450,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 </html>
