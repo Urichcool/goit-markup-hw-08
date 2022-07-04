@@ -83,6 +83,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .page-header-main-nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .page-header__logo {
   display: -webkit-box;
@@ -117,10 +124,30 @@ body {
 .page-header__logo:hover, .page-header__logo:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    margin-right: 95px;
+  }
+}
 
 .page-header-site-nav__list {
   display: block;
   margin-bottom: 305px;
+}
+@media screen and (min-width: 768px) {
+  .page-header-site-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 
 .page-header-site-nav__item {
@@ -128,6 +155,15 @@ body {
 }
 .page-header-site-nav__item:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .page-header-site-nav__item {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .page-header-site-nav__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .page-header-site-nav__link {
@@ -150,6 +186,16 @@ body {
 .page-header-site-nav__link:hover, .page-header-site-nav__link:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .page-header-site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 
 .page-header-site-nav__link--current {
   position: relative;
@@ -163,6 +209,16 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .page-header-site-nav__link--current {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 .page-header-site-nav__link--current::after {
   position: absolute;
@@ -184,6 +240,11 @@ body {
 .page-header-mobile-site-nav-contacts__list {
   display: block;
   margin-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .page-header-mobile-site-nav-contacts__list {
+    display: none;
+  }
 }
 
 .page-header-mobile-site-nav-contacts__item {
@@ -227,6 +288,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .page-header-mobile-site-nav-socials__list {
+    display: none;
+  }
+}
 
 .page-header-mobile-site-nav-socials__item {
   margin-right: 10px;
@@ -258,6 +324,24 @@ body {
 .page-header-site-nav__contacts__list {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .page-header-site-nav__contacts__list {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header-site-nav__contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+  }
+}
 
 .page-header-site-nav__icon {
   margin-right: 10px;
@@ -265,10 +349,19 @@ body {
 }
 
 .page-header-site-nav-contacts__item {
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
 .page-header-site-nav-contacts__item:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .page-header-site-nav-contacts__item {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .page-header-site-nav-contacts__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .page-header-site-nav-contacts__link {
@@ -277,8 +370,8 @@ body {
   color: #757575;
   text-decoration: none;
   font-weight: 500;
-  font-size: 33px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,6 +385,14 @@ body {
 }
 .page-header-site-nav-contacts__link:hover, .page-header-site-nav-contacts__link:focus {
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .page-header-site-nav-contacts__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .page-header-menu__button {
@@ -332,6 +433,7 @@ body {
 }
 
 .page-header-menu__container {
+  width: 100%;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -355,6 +457,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 }
 

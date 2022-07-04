@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: space-between;
  
+  @media screen and(min-width:$tablet) {
+    justify-content: flex-start;
+  }
 }
 
 
@@ -40,8 +43,17 @@
   &:hover,
   &:focus {
     color: $accent-color;
-  
 }
+ @media screen and(min-width:$tablet) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin-right: 88px;
+    }
+
+    @media screen and(min-width:$desktop) {
+      margin-right: 95px;
+    }
+  
 }
 
 
@@ -51,7 +63,10 @@
 .page-header-site-nav__list {
   display: block;
   margin-bottom: 305px;
-  
+  @media screen and(min-width:$tablet){
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 
 .page-header-site-nav__item {
@@ -59,13 +74,19 @@
   &:last-child{
     margin-bottom: 0;
   }
+
+  @media screen and(min-width:$tablet) {
+
+    margin-bottom: 0;
+    margin-right: 50px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 .page-header-site-nav__link {
   display: block;
- 
-
-
   color: $title-text-color;
 font-family: 'Roboto';
 font-style: normal;
@@ -81,7 +102,14 @@ font-style: normal;
   &:focus {
     color: $accent-color;
   }
-
+  @media screen and(min-width:$tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+  }
   
 }
 
@@ -97,6 +125,14 @@ font-style: normal;
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
+  @media screen and(min-width:$tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+  }
  
   &::after{
     position: absolute;
@@ -108,7 +144,7 @@ width: 100%;
 height: 4px;
 border-radius: 2px;
 background-color: $accent-color;
- @media screen and (min-width:768px) {
+ @media screen and (min-width:$tablet) {
     display: block;
   }
 }
@@ -117,6 +153,9 @@ background-color: $accent-color;
 .page-header-mobile-site-nav-contacts__list{
   display: block;
   margin-bottom: 64px;
+  @media screen and(min-width:$tablet) {
+display: none;
+  }
 }
 
 .page-header-mobile-site-nav-contacts__item{
@@ -155,6 +194,9 @@ color: $accent-color;
 
 .page-header-mobile-site-nav-socials__list{
   display: flex;
+  @media screen and(min-width:$tablet) {
+    display: none;
+  }
 }
 
 .page-header-mobile-site-nav-socials__item{
@@ -189,6 +231,19 @@ letter-spacing: 0.02em;
 
 .page-header-site-nav__contacts__list {
   display: none;
+  @media screen and(min-width:$tablet){
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+  }
+  @media screen and(min-width:$desktop) {
+    display: flex;
+   padding-top: 0;
+   padding-bottom: 0;
+   margin-left: auto;
+  }
+
 }
 
 .page-header-site-nav__icon{
@@ -199,12 +254,17 @@ fill: currentColor;
 
 
 .page-header-site-nav-contacts__item {
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   &:last-child{
     margin-bottom: 0;
   }
-
-
+@media screen and(min-width:$desktop) {
+  margin-bottom: 0;
+  margin-right: 30px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
 }
 
 .page-header-site-nav-contacts__link {
@@ -213,8 +273,8 @@ fill: currentColor;
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
-  font-size: 33px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   display: flex;
    transition-property: color;
@@ -225,6 +285,11 @@ fill: currentColor;
 color: $accent-color;
 }
 
-
+@media screen and(min-width:$desktop) {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.14;
+}
 
 }
