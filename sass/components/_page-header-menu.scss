@@ -17,7 +17,7 @@
     display: none;
   }
 }
-
+ 
 .page-header-menu__button .page-header__icon-close{
   display: none;
 }
@@ -30,8 +30,13 @@
   display: none;
 }
 
+
+
 .page-header-menu__container{
- 
+  padding-top: 48px;
+ padding-bottom: 48px;
+ padding-left: 40px;
+ z-index: 1;
 background-color: $primary-white-color;
 &.is-open{
   display: block;
@@ -43,10 +48,14 @@ background-color: $primary-white-color;
    position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width:100%;
+  
 }
 
 @media screen and (min-width: 768px){
   display: flex;
 }
+
+
 }
+
