@@ -36,9 +36,6 @@
   width: 100%;
  z-index: 1;
 background-color: $primary-white-color;
-&.is-open{
-  display: block;
-}
 
 
 @media screen and (max-width: 767px) {
@@ -51,6 +48,10 @@ background-color: $primary-white-color;
  padding-bottom: 48px;
  padding-left: 40px;
   z-index:1;
+  &.is-open{
+  display: block;
+}
+
 }
 
 @media screen and (min-width: 768px){
