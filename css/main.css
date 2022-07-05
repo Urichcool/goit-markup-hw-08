@@ -434,9 +434,6 @@ body {
 
 .page-header-menu__container {
   width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
   z-index: 1;
   background-color: #ffffff;
 }
@@ -450,6 +447,10 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -457,9 +458,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+    padding: 0;
+    z-index: 0;
   }
 }
 

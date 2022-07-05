@@ -14,35 +14,72 @@
     
 </head>
 <body>
-    <header class="page-header">
+   <header class="page-header page-header">
         <div class="container page-header-main-nav">
-    <nav class="page-header-main-nav">
+   
         <a class="page-header__logo" href="./index.html">
       <span class="page-header__logo--color">Web</span>Studio
         </a>
+       
+         <button type="button" 
+        class="page-header-menu__button is-open"
+        aria-expanded="false"
+        aria-controls="page-header-menu__container"
+        data-menu-button>
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню">
+                <use class="page-header__icon-menu" href="./images/icons.svg#icon-menu-close"></use>
+                <use class="page-header__icon-close" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
 
-    <ul class="list page-header-site-nav">
+        
+
+        
+        <div class="page-header-menu__container" id="page-header-menu__container" data-menu>
+             <nav class="page-header-site-nav">
+    <ul class="page-header-site-nav__list list">
         <li class="page-header-site-nav__item"><a href="./index.html" class="page-header-site-nav__link">Студия</a></li>
         <li class="page-header-site-nav__item"><a href="./portfolio.html" class="page-header-site-nav__link--current">Портфолио</a></li>
         <li class="page-header-site-nav__item"><a href="" class="page-header-site-nav__link">Контакты</a></li>
-    </ul> 
-        
-    </nav>
 
-        <ul class="page-header-site-nav__contacts list">
-        <li class="page-header-site-nav-contacts__item"><a href="mailto:info@devstudio.com" class="page-header-site-nav__link"> 
+        </ul> 
+         </nav>
+<ul class="page-header-mobile-site-nav-contacts__list list">
+ <li class="page-header-mobile-site-nav-contacts__item"><a href="tel:+380991111111" class="page-header-mobile-site-nav-contacts__link--phone">
+            +38 099 111 11 11</a></li>
+        <li class="page-header-mobile-site-nav-contacts__item"><a href="mailto:info@devstudio.com" class="page-header-mobile-site-nav-contacts__link"> 
+            info@devstudio.com
+            
+        </a></li>  
+    </ul>
+
+    <ul class="page-header-mobile-site-nav-socials__list list">
+    <li class="page-header-mobile-site-nav-socials__item"><a class="page-header-mobile-site-nav-socials__link" href="#">Instagram</a></li>
+    <li class="page-header-mobile-site-nav-socials__item"><a class="page-header-mobile-site-nav-socials__link" href="#">Twitter</a></li>
+    <li class="page-header-mobile-site-nav-socials__item"><a class="page-header-mobile-site-nav-socials__link" href="#">Facebook</a></li>
+    <li class="page-header-mobile-site-nav-socials__item"><a class="page-header-mobile-site-nav-socials__link" href="#">LinkedIn</a></li>
+    </ul>
+
+         <ul class="page-header-site-nav__contacts__list list">
+        <li class="page-header-site-nav-contacts__item"><a href="mailto:info@devstudio.com" class="page-header-site-nav-contacts__link"> 
             <svg width="16" height="12" class="page-header-site-nav__icon">
                 <use href="./images/icons.svg#icon-email"></use>
             </svg> info@devstudio.com
             
         </a></li>
-        <li class="page-header-site-nav-contacts__item"><a href="tel:+380991111111" class="page-header-site-nav__link">
+        <li class="page-header-site-nav-contacts__item"><a href="tel:+380991111111" class="page-header-site-nav-contacts__link">
             <svg width="10" height="16" class="page-header-site-nav__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
             </svg>
             +38 099 111 11 11</a></li>
     </ul>
-        </div>
+    
+        
+   </div>
+        
     </header>
 
     <main>
@@ -234,5 +271,6 @@
         
         
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

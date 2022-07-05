@@ -34,9 +34,6 @@
 
 .page-header-menu__container{
   width: 100%;
-  padding-top: 48px;
- padding-bottom: 48px;
- padding-left: 40px;
  z-index: 1;
 background-color: $primary-white-color;
 &.is-open{
@@ -50,14 +47,16 @@ background-color: $primary-white-color;
   top: 100%;
   left: 0;
   width:100%;
-  
+  padding-top: 48px;
+ padding-bottom: 48px;
+ padding-left: 40px;
+  z-index:1;
 }
 
 @media screen and (min-width: 768px){
   display: flex;
-    padding-top: 0;
- padding-bottom: 0;
- padding-left: 0;
+   padding: 0;
+ z-index: 0;
 }
 
 
