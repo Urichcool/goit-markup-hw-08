@@ -535,11 +535,6 @@ body.modal-open {
     margin: -15px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .features__list {
-    margin: -15px;
-  }
-}
 
 .features__item {
   text-align: center;
@@ -823,16 +818,40 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .page-footer__column {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
-.page-footer__column:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .page-footer__column {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .page-footer {
@@ -962,7 +981,14 @@ body.modal-open {
 }
 
 .page-footer-form__column {
+  margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .page-footer-form__column {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 
 .page-footer-form__text {
@@ -979,6 +1005,21 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__field {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .page-footer__input {
@@ -988,8 +1029,9 @@ body.modal-open {
   border-radius: 4px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   padding: 0 0 0 16px;
   outline: none;
   -webkit-transition-property: border-color;
@@ -998,6 +1040,13 @@ body.modal-open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 .page-footer__input:hover, .page-footer__input:focus {
   border: 1px solid #2196f3;
@@ -1040,7 +1089,6 @@ body.modal-open {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-left: 12px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
