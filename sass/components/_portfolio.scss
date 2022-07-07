@@ -5,15 +5,11 @@
 
 .portfolio-button__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
 .portfolio-button__item {
-  margin-right: 10px;
-  &:last-child{
-    margin-right: 0;
-  }
 }
 
 .portfolio-button {

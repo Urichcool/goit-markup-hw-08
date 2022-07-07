@@ -9,7 +9,7 @@
  @media screen and(min-width:$tablet) {
 display: flex;
 flex-wrap: wrap;
-margin: -30px;
+margin: -15px;
  }
 }
 
@@ -26,13 +26,13 @@ margin: -30px;
 }
 
   @media screen and (min-width:$tablet) {
-    width: calc((100% - 4 * 30px) /2 );
-    margin: 30px;
+    width: calc((100% - 4 * 15px) /2 );
+    margin: 15px;
   }
   
   @media screen and (min-width:$desktop) {
-    width: calc((100% - 8 * 30px) /4 );
-    margin: 30px;
+    width: calc((100% - 8 * 15px) /4 );
+    margin: 15px;
   }
  
 }

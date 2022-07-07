@@ -661,7 +661,7 @@ body.modal-open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
 }
 
@@ -681,14 +681,14 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .crew__item {
-    width: calc((100% - 120px) / 2);
-    margin: 30px;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .crew__item {
-    width: calc((100% - 240px) / 4);
-    margin: 30px;
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
   }
 }
 
@@ -795,17 +795,31 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
-.clients__item {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .clients__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
-.clients__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 180px) / 6);
+    margin: 15px;
+  }
 }
 
 .clients__link {
-  width: 170px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1502,17 +1516,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
-}
-
-.portfolio-button__item {
-  margin-right: 10px;
-}
-.portfolio-button__item:last-child {
-  margin-right: 0;
 }
 
 .portfolio-button {
@@ -1544,14 +1550,8 @@ body.modal-open {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+.card-set__list {
+  display: block;
 }
 
 .card-set__link {
@@ -1569,13 +1569,6 @@ body.modal-open {
 .card-set__link:hover, .card-set__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-set__item {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
 }
 
 .card-set__thumb {

@@ -1,8 +1,5 @@
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * $card-set-gap);
-  margin-top: calc(-1 *  $card-set-gap);
+.card-set__list {
+display: block;
 }
 
 .card-set__link{
@@ -19,9 +16,7 @@
 }
 
 .card-set__item {
-  flex-basis: calc(100% / 3 - $card-set-gap);
-  margin-top: $card-set-gap;
-  margin-left: $card-set-gap;
+ 
 }
 
 .card-set__thumb{
