@@ -15,6 +15,7 @@
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -653,22 +654,42 @@ body.modal-open {
   text-align: center;
 }
 
-.crew__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .crew__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -30px;
+  }
 }
 
 .crew__item {
-  min-width: 270px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
 }
-.crew__item:last-child {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .crew__item {
+    margin-bottom: 30px;
+  }
+  .crew__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .crew__item {
+    width: calc((100% - 120px) / 2);
+    margin: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .crew__item {
+    width: calc((100% - 240px) / 4);
+    margin: 30px;
+  }
 }
 
 .crew__title {
@@ -815,20 +836,13 @@ body.modal-open {
 }
 
 .page-footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -938,6 +952,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-footer-socials__item {
