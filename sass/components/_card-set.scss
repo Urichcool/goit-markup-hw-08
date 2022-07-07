@@ -1,5 +1,10 @@
 .card-set__list {
-display: block;
+  @media screen and(min-width: $tablet) {
+ display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 *  30px);
+}
 }
 
 .card-set__link{
@@ -16,7 +21,18 @@ display: block;
 }
 
 .card-set__item {
- 
+@media screen and(min-width: $tablet) {
+  width: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+
+@media screen and(min-width: $desktop) {
+  width: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
 }
 
 .card-set__thumb{
@@ -59,13 +75,14 @@ min-width: 322px;
 }
 
 .card-set__content{
-    padding: 20px 24px;
+    padding: 20px 18px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 }
 
 .card-set__name {
+ 
   color: $title-text-color;
   margin-bottom: 4px;
   font-family: "Roboto";

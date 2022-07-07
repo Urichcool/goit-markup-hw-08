@@ -6,10 +6,21 @@
 .portfolio-button__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+  @media screen and(min-width:$tablet)
+   {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
-.portfolio-button__item {
+.portfolio-button__item { 
+margin-right: 8px;
+margin-bottom: 15px;
+&:last-child{
+  margin-right: 0;
+}
+
 }
 
 .portfolio-button {
