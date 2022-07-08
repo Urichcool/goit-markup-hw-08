@@ -16,6 +16,10 @@
 }
 .features__item{
 text-align: center;
+margin-bottom: 30px;
+&:last-child{
+  margin-bottom: 0;
+}
  
   @media screen and (min-width: $tablet){
     text-align: left;
