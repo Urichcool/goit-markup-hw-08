@@ -159,26 +159,26 @@
 <ul class="list activites__list">
         <li class="activites__item">
             <img srcset="
-           ./images/box1-370.jpg 1x,
-            ./images/box1-740.jpg 2x
+           ./images/desktop/box1-370.jpg 1x,
+            ./images/desktop/box1-740.jpg 2x
            "
-            src="./images/box1-370.jpg" width="370" height="295" alt="Програмирование">
+            src="./images/desktop/box1-370.jpg" width="370" height="295" alt="Програмирование">
      <p class="activites__text">Десктопные приложения</p>
         </li>
         <li class="activites__item">
            <img srcset="
-           ./images/box2-370.jpg 1x,
-            ./images/box2-740.jpg 2x
+           ./images/desktop/box2-370.jpg 1x,
+            ./images/desktop/box2-740.jpg 2x
            "
-           src="./images/box2-370.jpg" width="370" alt="Маркетинг">
+           src="./images/desktop/box2-370.jpg" width="370" alt="Маркетинг">
         <p class="activites__text">Мобильные приложения</p>
         </li>
         <li class="activites__item">
             <img srcset="
-           ./images/box3-370.jpg 1x,
-            ./images/box3-740.jpg 2x
+           ./images/desktop/box3-370.jpg 1x,
+            ./images/desktop/box3-740.jpg 2x
            "
-            src="./images/box3-370.jpg" width="370" height="295" alt="Графический дизайн">
+            src="./images/desktop/box3-370.jpg" width="370" height="295" alt="Графический дизайн">
         <p class="activites__text">Дизайнерские решения</p>
         </li>
 </ul>
@@ -191,7 +191,31 @@
         <h2 class="crew__title">Наша команда</h2>
     <ul class=" crew__list list">
         <li class="crew__item"> 
-            <img src="./images/crew1-270.jpg" width="270" alt="Игорь Демьяненко Product Designer">
+            <picture>
+                <source
+                srcset="
+                ./images/desktop/crew1-270 1x,
+                ./images/desktop/crew1-540 2x
+                "
+                media="(min-width: 1200)"
+                />
+                <source
+                srcset="
+                ./images/tablet/crew1-354 1x,
+                ./images/tablet/crew1-708 2x
+                "
+                media="(min-width: 768)"
+                />
+                <source
+                srcset="
+                ./images/phone/crew1-450 1x,
+                ./images/phone/crew1-900 2x
+                "
+                media="(max-width: 767)"
+                />
+                <img src="./images/desktop/crew1-270.jpg" alt="Игорь Демьяненко Product Designer">
+            </picture>
+            
             <div class="crew__content">
             <h3 class="crew__name">Игорь Демьяненко</h3> 
             <p class="crew__text">Product Designer</p>
@@ -225,7 +249,30 @@
         
 
         <li class="crew__item">
-            <img src="./images/crew2-270.jpg" width="270" alt="Ольга Репина Frontend Developer">
+            <picture>
+                <source
+                srcset="
+                ./images/desktop/crew2-270 1x,
+                ./images/desktop/crew2-540 2x
+                "
+                media="(min-width: 1200)"
+                />
+                <source
+                srcset="
+                ./images/tablet/crew2-354 1x,
+                ./images/tablet/crew2-708 2x
+                "
+                media="(min-width: 768)"
+                />
+                <source
+                srcset="
+                ./images/phone/crew2-450 1x,
+                ./images/phone/crew2-900 2x
+                "
+                media="(max-width: 767)"
+                />
+                <img src="./images/desktop/crew2-270.jpg" alt="Ольга Репина Frontend Developer">
+            </picture>
             <div class="crew__content">
             <h3 class="crew__name">Ольга Репина</h3>
             <p class="crew__text">Frontend Developer</p>
@@ -259,7 +306,30 @@
         </li>
 
         <li class="crew__item">
-            <img src="./images/crew3-270.jpg" width="270" alt="Николай Тарасов Marketing ">
+            <picture>
+                <source
+                srcset="
+                ./images/desktop/crew3-270 1x,
+                ./images/desktop/crew3-540 2x
+                "
+                media="(min-width: 1200)"
+                />
+                <source
+                srcset="
+                ./images/tablet/crew3-354 1x,
+                ./images/tablet/crew3-708 2x
+                "
+                media="(min-width: 768)"
+                />
+                <source
+                srcset="
+                ./images/phone/crew3-450 1x,
+                ./images/phone/crew3-900 2x
+                "
+                media="(max-width: 767)"
+                />
+                <img src="./images/desktop/crew3-270.jpg" alt="Николай Тарасов Marketing">
+            </picture>
             <div class="crew__content">
                 <h3 class="crew__name">Николай Тарасов</h3>
                 <p class="crew__text">Marketing</p>
@@ -293,7 +363,30 @@
         </li>
         
         <li class="crew__item">
-            <img src="./images/crew4-270.jpg" width="270" alt="Михаил Ермаков UI Designer">
+            <picture>
+                <source
+                srcset="
+                ./images/desktop/crew4-270 1x,
+                ./images/desktop/crew4-540 2x
+                "
+                media="(min-width: 1200)"
+                />
+                <source
+                srcset="
+                ./images/tablet/crew4-354 1x,
+                ./images/tablet/crew4-708 2x
+                "
+                media="(min-width: 768)"
+                />
+                <source
+                srcset="
+                ./images/phone/crew4-450 1x,
+                ./images/phone/crew4-900 2x
+                "
+                media="(max-width: 767)"
+                />
+                <img src="./images/desktop/crew4-270.jpg" alt="Михаил Ермаков UI Designer">
+            </picture>
             <div class="crew__content">
                 <h3 class="crew__name">Михаил Ермаков</h3>
                 <p class="crew__text">UI Designer</p>
