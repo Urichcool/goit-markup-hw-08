@@ -172,6 +172,11 @@ flex-direction: row;
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
+
+@media screen and(min-width:$tablet) {
+width: 450px;  
+}
+
   @media screen and(min-width:$desktop) {
     width: 358px;
     margin-bottom: 0;

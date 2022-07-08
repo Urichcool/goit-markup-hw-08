@@ -311,7 +311,7 @@ body.modal-open {
   padding-top: 10px;
   padding-bottom: 48px;
   padding-left: 40px;
-  padding-right: 15px;
+  padding-right: 30px;
   background-color: #ffffff;
 }
 .page-header-mobile-menu.is-open {
@@ -336,11 +336,6 @@ body.modal-open {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .page-header-menu__button-close {
@@ -1103,6 +1098,11 @@ body.modal-open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .page-footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-footer__input {
