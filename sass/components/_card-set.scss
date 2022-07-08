@@ -21,6 +21,10 @@
 }
 
 .card-set__item {
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0;
+  }
 @media screen and(min-width: $tablet) {
   width: calc(100% / 2 - 30px);
   margin-top: 30px;
