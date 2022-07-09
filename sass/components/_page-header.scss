@@ -149,8 +149,22 @@ margin-bottom: 10px;
 
 
 .page-header-site-nav__icon{
-margin-right: 10px;
+&--phone{
+  margin-right: 10px;
 fill: currentColor;
+  @media screen and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
+}
+&--mail{
+    margin-right: 10px;
+fill: currentColor;
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
 }
 
 .page-header-site-nav-contacts__link {

@@ -244,9 +244,25 @@ body.modal-open {
   }
 }
 
-.page-header-site-nav__icon {
+.page-header-site-nav__icon--phone {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .page-header-site-nav__icon--phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+.page-header-site-nav__icon--mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .page-header-site-nav__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .page-header-site-nav-contacts__link {
@@ -935,6 +951,11 @@ body.modal-open {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    text-align: start;
   }
 }
 
