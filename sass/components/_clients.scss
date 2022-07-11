@@ -1,7 +1,11 @@
 .clients{
+  text-align: center;
+ padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width:$desktop) {
   padding-top: 94px;
   padding-bottom: 94px;
-  text-align: center;
+  }
 }
 
 .clients__title{
@@ -10,9 +14,14 @@
   font-style: normal;
   color: $title-text-color;
   font-weight: 700;
+font-size: 28px;
+line-height: 1,17;
+letter-spacing: 0.03em;
+@media screen and(min-width:$desktop) {
   font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em; 
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
 }
 
 .clients__list{

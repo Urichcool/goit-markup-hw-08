@@ -1,9 +1,14 @@
 .crew {
   background-color: $secondary-white-color;
+  text-align: center;
+   padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width:$desktop) {
   padding-top: 94px;
   padding-bottom: 94px;
-  text-align: center;
+  }
 }
+
 
 .crew__list {
  @media screen and(min-width:$tablet) {
@@ -43,9 +48,14 @@ margin: -15px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
+font-size: 28px;
+line-height: 1,17;
+letter-spacing: 0.03em;
+@media screen and(min-width:$desktop) {
   font-size: 36px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
 }
 
 .crew__content{

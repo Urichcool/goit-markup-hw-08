@@ -166,6 +166,7 @@ color: $accent-color;
 
 .page-header-mobile-site-nav-socials__list{
   display: flex;
+  flex-wrap: wrap;
   @media screen and(min-width:$tablet) {
     display: none;
   }

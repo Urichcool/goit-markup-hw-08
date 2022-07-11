@@ -3,9 +3,8 @@
 @media screen and (min-width:$tablet) {
   display: flex;
 flex-wrap: wrap;
-flex-direction: row;
 align-items: baseline;
-justify-content: space-between;
+justify-content: space-around;
 }
 @media screen and (min-width:$desktop) {
 text-align: start;
